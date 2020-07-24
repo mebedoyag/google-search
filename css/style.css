@@ -31,3 +31,60 @@
 .icon-cross:before {
   content: "\ea0f";
 }
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* ------------------------------> Header */
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.header__search {
+    display: flex;
+    border: 1px solid gray;
+    width: 650px;
+    height: 40px;
+    border-radius: 20px;
+}
+.header nav {
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.header nav button {
+    background-color: blue;
+    width: 100px;
+    height: 40px;
+    color: white;
+    /* padding: 5px; */
+}
+.header ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+}
+.header ul li {
+    margin-right: 10px;
+}
+.input {
+    border: 0;
+    width: 550px;
+    margin-left: 20px;
+}
+.input:focus {
+    outline: none;
+}
+.icon {
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    width: 80px;
+}
