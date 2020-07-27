@@ -31,7 +31,13 @@
 .icon-cross:before {
   content: "\ea0f";
 }
-
+.icon-cross {
+    color: #82888d;
+    font-weight: 200;
+}
+.icon-search {
+    color: #4485f4;
+}
 body {
     margin: 0;
     font-family: sans-serif;
@@ -44,6 +50,10 @@ a {
 a:hover {
     text-decoration: underline;
 }
+hr {
+    border: .5px solid #e3e5e8;
+    background-color: #e3e5e8;
+}
 /* ------------------------------> Header */
 
 .header {
@@ -53,7 +63,7 @@ a:hover {
 }
 .header__search {
     display: flex;
-    border: 1px solid gray;
+    border: 1px solid #e3e5e8;
     width: 650px;
     height: 40px;
     border-radius: 20px;
@@ -67,10 +77,12 @@ a:hover {
     margin-left: 20px;
 }
 .header nav button {
-    background-color: blue;
+    background-color: #3055ce;
     width: 100px;
     height: 40px;
     color: white;
+    border: 0;
+    border-radius: 3px;
     /* padding: 5px; */
 }
 .header ul {
@@ -101,6 +113,8 @@ a:hover {
 /* ------------------------------> Menu */
 .menu p {
     margin-left: 150px;
+    color: #858699;
+    font-size: 14px;
 }
 .menu nav ul {
     display: flex;
@@ -111,6 +125,8 @@ a:hover {
 .menu nav ul li {
     list-style: none;
     margin-right: 20px;
+    font-size: 13px;
+    color: #858699;
 }
 .push-right {
     margin-left: auto;
@@ -120,6 +136,18 @@ a:hover {
     width: 650px;
     margin-left: 150px;
     /* border: 1px solid red; */
+}
+.search-results h3 {
+    font-weight: normal;
+    font-size: 20px;
+    margin-bottom: 0;
+    color: #3055ce;
+}
+.search-results p {
+    color: #858699;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-top: 5px;
 }
 .search-results article {
     margin-bottom: 30px;
@@ -143,10 +171,25 @@ a:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 20px;
-    grid-auto-rows: 350px;
+    grid-auto-rows: auto;
+}
+.videos h3 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    color: #3055ce;
+    font-weight: normal;
+    font-size: 20px;
+}
+.videos h5 {
+    font-weight: normal;
+    color: #858699;
+    font-size: 13px;
 }
 .videos div {
-    border: 1px solid gray;
+    border: 1px solid #e3e5e8;
+    border-radius: 6px;
+    color: #3055ce;
+    font-size: 18px;
 }
 /* ------------------------------> Search Others */
 .search-others {
@@ -154,8 +197,12 @@ a:hover {
     margin-left: 150px;
     margin-top: 40px;
 }
+.search-others h3 {
+    font-weight: normal;
+}
 .search-others h4 {
     margin: 0;
+    color: #2d3cab;
 }
 .search-others div {
     display: grid;
@@ -180,13 +227,15 @@ a:hover {
 }
 /* ------------------------------> Footer */
 .footer {
-    background-color: lightgray;
+    background-color: #f2f2f2;
     height: 80px;
     padding-left: 150px;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    font-size: 14px;
+    color: #837b78;
 
 }
 .footer ul {
