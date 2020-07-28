@@ -1,2 +1,2 @@
-For this project, we will deconstruct a google-search web page and rebuild it.
+For this project, I will deconstruct a google-search web page and rebuild it.
 
