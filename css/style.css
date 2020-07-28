@@ -60,6 +60,9 @@ hr {
     display: flex;
     align-items: center;
     margin-top: 10px;
+    position: sticky;
+    top: 0;
+    background-color: white;
 }
 .header__search {
     display: flex;
@@ -68,6 +71,9 @@ hr {
     height: 40px;
     border-radius: 20px;
 }
+ .header__search:hover {
+     box-shadow: 0px 1px 10px 0px #d9d6d6;
+ }
 .header nav {
     margin-left: auto;
     margin-top: 0;
@@ -137,6 +143,9 @@ hr {
     margin-left: 150px;
     /* border: 1px solid red; */
 }
+.search-results {
+
+}
 .search-results h3 {
     font-weight: normal;
     font-size: 20px;
@@ -180,6 +189,9 @@ hr {
     font-weight: normal;
     font-size: 20px;
 }
+.videos h4 a {
+    font-weight: normal;
+}
 .videos h5 {
     font-weight: normal;
     color: #858699;
@@ -190,6 +202,9 @@ hr {
     border-radius: 6px;
     color: #3055ce;
     font-size: 18px;
+}
+.videos-individually {
+    object-fit: cover;
 }
 /* ------------------------------> Search Others */
 .search-others {
